@@ -1,28 +1,61 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using System.Collections;
 
-public class vibration : MonoBehaviour
+public static class Vibration
 {
-    // Start is called before the first frame update
-    public Button vibrateToggleButton;
-    private bool isVibrationOn = true;
-    void Start()
+
+#if UNITY_ANDROID && !UNITY_EDITOR
+    public static AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+    public static AndroidJavaObject currentActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
+    public static AndroidJavaObject vibrator = currentActivity.Call<AndroidJavaObject>("getSystemService", "vibrator");
+#else
+    public static AndroidJavaClass unityPlayer;
+    public static AndroidJavaObject currentActivity;
+    public static AndroidJavaObject vibrator;
+#endif
+
+    public static void Vibrate()
     {
-        vibrateToggleButton.onClick.AddListener(ToggleVibration);
+        if (isAndroid())
+            vibrator.Call("vibrate");
+        else
+            Handheld.Vibrate();
     }
 
-    void ToggleVibration()
+
+    public static void Vibrate(long milliseconds)
     {
-        isVibrationOn = !isVibrationOn;
-        if (isVibrationOn )
-        {
-            Handheld.Vibrate();
-        }
+        if (isAndroid())
+            vibrator.Call("vibrate", milliseconds);
         else
-        {
             Handheld.Vibrate();
-        }
+    }
+
+    public static void Vibrate(long[] pattern, int repeat)
+    {
+        if (isAndroid())
+            vibrator.Call("vibrate", pattern, repeat);
+        else
+            Handheld.Vibrate();
+    }
+
+    public static bool HasVibrator()
+    {
+        return isAndroid();
+    }
+
+    public static void Cancel()
+    {
+        if (isAndroid())
+            vibrator.Call("cancel");
+    }
+
+    private static bool isAndroid()
+    {
+#if UNITY_ANDROID && !UNITY_EDITOR
+	return true;
+#else
+        return false;
+#endif
     }
 }

@@ -205,7 +205,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 599190038}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 816372287}
+        m_TargetAssemblyTypeName: makeVibration, Assembly-CSharp
+        m_MethodName: onStopVibrate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &599190038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,6 +267,7 @@ GameObject:
   - component: {fileID: 816372286}
   - component: {fileID: 816372285}
   - component: {fileID: 816372284}
+  - component: {fileID: 816372287}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -312,6 +325,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &816372287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816372283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd89475fa1250c34ea464af0592de534, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1211054027
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,7 +544,6 @@ GameObject:
   - component: {fileID: 1618400955}
   - component: {fileID: 1618400954}
   - component: {fileID: 1618400953}
-  - component: {fileID: 1618400952}
   m_Layer: 5
   m_Name: Button (Legacy)
   m_TagString: Untagged
@@ -547,19 +571,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 523}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1618400952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1618400950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3edf85bb2c0a1f44b108fce6aa73332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vibrateToggleButton: {fileID: 1618400953}
 --- !u!114 &1618400953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -603,7 +614,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1618400954}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 816372287}
+        m_TargetAssemblyTypeName: makeVibration, Assembly-CSharp
+        m_MethodName: onClickVibrateLong
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1618400954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -772,6 +795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vibrateToggleButton: {fileID: 0}
+  isVibrationOn: 1
 --- !u!114 &1957021447
 MonoBehaviour:
   m_ObjectHideFlags: 0
