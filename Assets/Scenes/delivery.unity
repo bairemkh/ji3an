@@ -206,8 +206,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 816372287}
-        m_TargetAssemblyTypeName: VibrationController, Assembly-CSharp
+      - m_Target: {fileID: 720044753}
+        m_TargetAssemblyTypeName: makeVibration, Assembly-CSharp
         m_MethodName: StopVibration
         m_Mode: 1
         m_Arguments:
@@ -217,7 +217,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!114 &599190038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,6 +256,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 599190035}
   m_CullTransparentMesh: 1
+--- !u!1 &720044752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 720044754}
+  - component: {fileID: 720044753}
+  m_Layer: 0
+  m_Name: effect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &720044753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720044752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba9d648f6fa0a0c4d91feef69bd8fdf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &720044754
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720044752}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 505.56708, y: 1166.7058, z: -17.650208}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &816372283
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,7 +311,6 @@ GameObject:
   - component: {fileID: 816372286}
   - component: {fileID: 816372285}
   - component: {fileID: 816372284}
-  - component: {fileID: 816372287}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -325,18 +368,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &816372287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 816372283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3edf85bb2c0a1f44b108fce6aa73332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1211054027
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,8 +646,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 816372287}
-        m_TargetAssemblyTypeName: VibrationController, Assembly-CSharp
+      - m_Target: {fileID: 720044753}
+        m_TargetAssemblyTypeName: makeVibration, Assembly-CSharp
         m_MethodName: StartVibration
         m_Mode: 1
         m_Arguments:
@@ -626,7 +657,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!114 &1618400954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -843,3 +874,4 @@ SceneRoots:
   - {fileID: 1211054030}
   - {fileID: 1612039730}
   - {fileID: 816372286}
+  - {fileID: 720044754}
