@@ -8,7 +8,7 @@ public class makeVibration : MonoBehaviour
     private AndroidJavaObject vibrator;
     private AndroidJavaObject currentActivity;
     private AndroidJavaObject unityPlayer;
-    private bool isVibrating = false;
+    private bool isVibrating = true;
 
     void Start()
     {
