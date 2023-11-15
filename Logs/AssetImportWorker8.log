@@ -1,0 +1,530 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.9f1 (ea401c316338) revision 15351836'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit CoreSingleLanguage' Language: 'fr' Physical Memory: 16140 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker8
+-projectPath
+D:/ji3an
+-logFile
+Logs/AssetImportWorker8.log
+-srvPort
+61294
+Successfully changed project path to: D:/ji3an
+D:/ji3an
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [16752] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2849602723 [EditorId] 2849602723 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-KL1EF8O9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [16752] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2849602723 [EditorId] 2849602723 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-KL1EF8O9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 3 workers.
+Refreshing native plugins compatible for Editor in 603.04 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.9f1 (ea401c316338)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/ji3an/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics (ID=0x9a78)
+    Vendor:   Intel
+    VRAM:     8070 MB
+    Driver:   30.0.101.2079
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56284
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.088591 seconds.
+- Loaded All Assemblies, in  2.317 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 1583 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.441 seconds
+Domain Reload Profiling: 5762ms
+	BeginReloadAssembly (638ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (367ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (364ms)
+	LoadAllAssembliesAndSetupDomain (916ms)
+		LoadAssemblies (659ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (889ms)
+			TypeCache.Refresh (887ms)
+				TypeCache.ScanAssembly (786ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (3452ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (3064ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2106ms)
+			SetLoadedEditorAssemblies (13ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (46ms)
+			ProcessInitializeOnLoadAttributes (652ms)
+			ProcessInitializeOnLoadMethodAttributes (247ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  5.817 seconds
+Refreshing native plugins compatible for Editor in 120.76 ms, found 9 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in 14.698 seconds
+Domain Reload Profiling: 20516ms
+	BeginReloadAssembly (1640ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (104ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (492ms)
+	RebuildCommonClasses (215ms)
+	RebuildNativeTypeToScriptingClass (106ms)
+	initialDomainReloadingComplete (441ms)
+	LoadAllAssembliesAndSetupDomain (3413ms)
+		LoadAssemblies (3118ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (852ms)
+			TypeCache.Refresh (738ms)
+				TypeCache.ScanAssembly (556ms)
+			ScanForSourceGeneratedMonoScriptInfo (96ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (14701ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (12913ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (142ms)
+			SetLoadedEditorAssemblies (13ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (369ms)
+			ProcessInitializeOnLoadAttributes (1159ms)
+			ProcessInitializeOnLoadMethodAttributes (11211ms)
+			AfterProcessingInitializeOnLoad (18ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (28ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.29 seconds
+Refreshing native plugins compatible for Editor in 79.10 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2807 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 353 unused Assets / (1.5 MB). Loaded Objects now: 2995.
+Memory consumption went from 148.6 MB to 147.1 MB.
+Total: 14.922200 ms (FindLiveObjects: 0.453300 ms CreateObjectMapping: 0.465700 ms MarkObjects: 10.505500 ms  DeleteObjects: 3.495000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/UnityRemoteVideo.cs: 732ca06f64f6815d4022f93b60c96922 -> 
+  custom:scripting/monoscript/fileName/ARRect.cs: a131f04357f5fa4a2ed9e9865126ac29 -> 
+  custom:scripting/monoscript/fileName/UnityARVideo.cs: 22daf59ddba5bd4561a1f6de5398d189 -> 
+  custom:scripting/monoscript/fileName/SerializableObjects.cs: d872520fb32f3cc8dda2758fff975324 -> 
+  custom:scripting/monoscript/fileName/UnityARBuildPostprocessor.cs: 3c479b2a3992483e57c1ad3d452bcd0b -> 
+  custom:scripting/monoscript/fileName/FocusSquare.cs: bc69a44f49ef1a3c828d602c69dbe79a -> 
+  custom:scripting/monoscript/fileName/UnityARAmbient.cs: 8c1e9fe47c8a95d584beca443c4ffc7a -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/ConnectionMessageIds.cs: a3f9862cb38a5c3052e1503bfe6a91b2 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/EditorHitTest.cs: b65289fa61808e67b4d4771c9c4b5bef -> 
+  custom:scripting/monoscript/fileName/ARUserAnchor.cs: 9544fd81358bddd16c37c9562ccb581f -> 
+  custom:scripting/monoscript/fileName/ARKitRemoteConnection.cs: 2ac23c555a170c03200e23774edd2b9a -> 
+  custom:scripting/monoscript/fileName/UnityARKitLightManager.cs: 8b29b0edee858c9a927afb4b54ceb16e -> 
+  custom:scripting/monoscript/fileName/UnityARUtility.cs: 31f47508d52eab88d0d22bba268f1b3f -> 
+  custom:scripting/monoscript/fileName/ARPlaneAnchor.cs: ae21134feb17d5842662b491d5f4a556 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/ARSize.cs: 6527256fab0ce0b7c755d496f6a013f6 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/DontDestroyOnLoad.cs: 2fff15d0e51429f1df8d5e3b094b8c7f -> 56b2a776441f8fe7d65978db2a529e59
+  custom:scripting/monoscript/fileName/ARCamera.cs: d74cfb0d34b546cf0529b629b225be99 -> 
+  custom:scripting/monoscript/fileName/ARHitTestResult.cs: dbd1f21240cde130c305d3946b4803dc -> 
+  custom:scripting/monoscript/fileName/UnityARGeneratePlane.cs: b164f4c2791af4fbd48a5a3b70a3723c -> 
+  custom:scripting/monoscript/fileName/AR3DOFCameraManager.cs: 10389ae78f2045c8a5830a1627b9a754 -> 
+  custom:scripting/monoscript/fileName/UnityARKitPluginSettings.cs: a19f853bd354bc7c9ba9cae852348c90 -> 
+  custom:scripting/monoscript/fileName/UnityARCameraNearFar.cs: 064a8a124726047d8848bbc0b3ba0f48 -> 
+  custom:scripting/monoscript/fileName/UnityARAnchorManager.cs: efb73106f12e36d806a2b5b3cab43c39 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ARFrame.cs: f426a71510ea2409b1f518eeaee3fb26 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:scripting/monoscript/fileName/UnityARHitTestExample.cs: 585394dd31dd2d578b5a39661f3156a1 -> 
+  custom:scripting/monoscript/fileName/PointCloudParticleExample.cs: 2127569364bd47af0e33bdd589f02a1c -> 
+  custom:scripting/monoscript/fileName/ARFaceAnchor.cs: e18e64ef1bd4205b9b43ed68ef445090 -> 
+  custom:scripting/monoscript/fileName/UnityARCameraManager.cs: 482d027fe096f486883a75d01dce54ae -> 
+  custom:scripting/monoscript/fileName/ARPlaneAnchorGameObject.cs: dbd910d19ade41d2be9a32b256d0f76a -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityARUserAnchorExample.cs: 3dee24c3440ecc03af912fa75af285d4 -> 
+  custom:scripting/monoscript/fileName/ARAnchor.cs: ff8ad1093254d546c5583f49c2510aa1 -> c3f780b2cf86850afd21e0595aeb6153
+  custom:scripting/monoscript/fileName/UnityARSessionNativeInterface.cs: 7df308ca7eb6a478a1564926bbd4ec64 -> 
+  custom:scripting/monoscript/fileName/UnityPointCloudExample.cs: 2c20f6f664f45d8ac3b8e8e1f26a8f43 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ConnectToEditor.cs: d8538f3df3a6a578dd6683ed3fc13455 -> 
+  custom:scripting/monoscript/fileName/ARLightEstimate.cs: 2b88554d4869d3ecc50031c461679771 -> 
+  custom:scripting/monoscript/fileName/UnityARMatrixOps.cs: 5889caf876a10e449b7d8c748f529ca8 -> 
+  custom:scripting/monoscript/fileName/ARTextureHandles.cs: 3f5b84a30600ede76a4f28ec7c79848e -> 
+  custom:scripting/monoscript/fileName/GPSLocation.cs: c54591021a494ad4c3f1f21a2b68dbef -> 
+  custom:scripting/monoscript/fileName/ObjectSerializationExtension.cs: a1316ad092e228ecad25ec4d3c0efea8 -> 
+  custom:scripting/monoscript/fileName/UnityARUserAnchorComponent.cs: bf205267640665d47e5a63e3a2000a9e -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/UnityARKitControl.cs: 82f13175afff34da502b2d922695a84e -> 
+  custom:scripting/monoscript/fileName/ARPoint.cs: b543ce684f5effe1394f011653ca0e67 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.996 seconds
+Refreshing native plugins compatible for Editor in 27.84 ms, found 9 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in 26.669 seconds
+Domain Reload Profiling: 27658ms
+	BeginReloadAssembly (441ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (51ms)
+	RebuildCommonClasses (68ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (95ms)
+	LoadAllAssembliesAndSetupDomain (362ms)
+		LoadAssemblies (670ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (20ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (26670ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (25609ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (58ms)
+			SetLoadedEditorAssemblies (10ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (135ms)
+			ProcessInitializeOnLoadAttributes (824ms)
+			ProcessInitializeOnLoadMethodAttributes (24522ms)
+			AfterProcessingInitializeOnLoad (52ms)
+			EditorAssembliesLoaded (8ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (138ms)
+Refreshing native plugins compatible for Editor in 181.30 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2764 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 337 unused Assets / (1.4 MB). Loaded Objects now: 2999.
+Memory consumption went from 143.5 MB to 142.1 MB.
+Total: 9.585700 ms (FindLiveObjects: 0.538200 ms CreateObjectMapping: 0.563900 ms MarkObjects: 6.780000 ms  DeleteObjects: 1.701500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/UnityRemoteVideo.cs: 732ca06f64f6815d4022f93b60c96922 -> 
+  custom:scripting/monoscript/fileName/ARRect.cs: a131f04357f5fa4a2ed9e9865126ac29 -> 
+  custom:scripting/monoscript/fileName/UnityARVideo.cs: 22daf59ddba5bd4561a1f6de5398d189 -> 
+  custom:scripting/monoscript/fileName/SerializableObjects.cs: d872520fb32f3cc8dda2758fff975324 -> 
+  custom:scripting/monoscript/fileName/UnityARBuildPostprocessor.cs: 3c479b2a3992483e57c1ad3d452bcd0b -> 
+  custom:scripting/monoscript/fileName/FocusSquare.cs: bc69a44f49ef1a3c828d602c69dbe79a -> 
+  custom:scripting/monoscript/fileName/UnityARAmbient.cs: 8c1e9fe47c8a95d584beca443c4ffc7a -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/ConnectionMessageIds.cs: a3f9862cb38a5c3052e1503bfe6a91b2 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/EditorHitTest.cs: b65289fa61808e67b4d4771c9c4b5bef -> 
+  custom:scripting/monoscript/fileName/ARUserAnchor.cs: 9544fd81358bddd16c37c9562ccb581f -> 
+  custom:scripting/monoscript/fileName/ARKitRemoteConnection.cs: 2ac23c555a170c03200e23774edd2b9a -> 
+  custom:scripting/monoscript/fileName/UnityARKitLightManager.cs: 8b29b0edee858c9a927afb4b54ceb16e -> 
+  custom:scripting/monoscript/fileName/UnityARUtility.cs: 31f47508d52eab88d0d22bba268f1b3f -> 
+  custom:scripting/monoscript/fileName/ARPlaneAnchor.cs: ae21134feb17d5842662b491d5f4a556 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/ARSize.cs: 6527256fab0ce0b7c755d496f6a013f6 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/DontDestroyOnLoad.cs: 2fff15d0e51429f1df8d5e3b094b8c7f -> 56b2a776441f8fe7d65978db2a529e59
+  custom:scripting/monoscript/fileName/ARCamera.cs: d74cfb0d34b546cf0529b629b225be99 -> 
+  custom:scripting/monoscript/fileName/ARHitTestResult.cs: dbd1f21240cde130c305d3946b4803dc -> 
+  custom:scripting/monoscript/fileName/UnityARGeneratePlane.cs: b164f4c2791af4fbd48a5a3b70a3723c -> 
+  custom:scripting/monoscript/fileName/AR3DOFCameraManager.cs: 10389ae78f2045c8a5830a1627b9a754 -> 
+  custom:scripting/monoscript/fileName/UnityARKitPluginSettings.cs: a19f853bd354bc7c9ba9cae852348c90 -> 
+  custom:scripting/monoscript/fileName/UnityARCameraNearFar.cs: 064a8a124726047d8848bbc0b3ba0f48 -> 
+  custom:scripting/monoscript/fileName/UnityARAnchorManager.cs: efb73106f12e36d806a2b5b3cab43c39 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ARFrame.cs: f426a71510ea2409b1f518eeaee3fb26 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:scripting/monoscript/fileName/UnityARHitTestExample.cs: 585394dd31dd2d578b5a39661f3156a1 -> 
+  custom:scripting/monoscript/fileName/PointCloudParticleExample.cs: 2127569364bd47af0e33bdd589f02a1c -> 
+  custom:scripting/monoscript/fileName/ARFaceAnchor.cs: e18e64ef1bd4205b9b43ed68ef445090 -> 
+  custom:scripting/monoscript/fileName/UnityARCameraManager.cs: 482d027fe096f486883a75d01dce54ae -> 
+  custom:scripting/monoscript/fileName/ARPlaneAnchorGameObject.cs: dbd910d19ade41d2be9a32b256d0f76a -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityARUserAnchorExample.cs: 3dee24c3440ecc03af912fa75af285d4 -> 
+  custom:scripting/monoscript/fileName/ARAnchor.cs: ff8ad1093254d546c5583f49c2510aa1 -> c3f780b2cf86850afd21e0595aeb6153
+  custom:scripting/monoscript/fileName/UnityARSessionNativeInterface.cs: 7df308ca7eb6a478a1564926bbd4ec64 -> 
+  custom:scripting/monoscript/fileName/UnityPointCloudExample.cs: 2c20f6f664f45d8ac3b8e8e1f26a8f43 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ConnectToEditor.cs: d8538f3df3a6a578dd6683ed3fc13455 -> 
+  custom:scripting/monoscript/fileName/ARLightEstimate.cs: 2b88554d4869d3ecc50031c461679771 -> 
+  custom:scripting/monoscript/fileName/UnityARMatrixOps.cs: 5889caf876a10e449b7d8c748f529ca8 -> 
+  custom:scripting/monoscript/fileName/ARTextureHandles.cs: 3f5b84a30600ede76a4f28ec7c79848e -> 
+  custom:scripting/monoscript/fileName/GPSLocation.cs: c54591021a494ad4c3f1f21a2b68dbef -> 
+  custom:scripting/monoscript/fileName/ObjectSerializationExtension.cs: a1316ad092e228ecad25ec4d3c0efea8 -> 
+  custom:scripting/monoscript/fileName/UnityARUserAnchorComponent.cs: bf205267640665d47e5a63e3a2000a9e -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/UnityARKitControl.cs: 82f13175afff34da502b2d922695a84e -> 
+  custom:scripting/monoscript/fileName/ARPoint.cs: b543ce684f5effe1394f011653ca0e67 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.377 seconds
+Refreshing native plugins compatible for Editor in 23.69 ms, found 9 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  6.877 seconds
+Domain Reload Profiling: 8250ms
+	BeginReloadAssembly (650ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (189ms)
+	RebuildCommonClasses (155ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (194ms)
+	LoadAllAssembliesAndSetupDomain (347ms)
+		LoadAssemblies (637ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (23ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (6878ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (6090ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (709ms)
+			SetLoadedEditorAssemblies (59ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (940ms)
+			ProcessInitializeOnLoadAttributes (1802ms)
+			ProcessInitializeOnLoadMethodAttributes (2569ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 16.92 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2764 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 337 unused Assets / (1.4 MB). Loaded Objects now: 3003.
+Memory consumption went from 143.5 MB to 142.0 MB.
+Total: 5.258400 ms (FindLiveObjects: 0.258900 ms CreateObjectMapping: 0.100300 ms MarkObjects: 3.690600 ms  DeleteObjects: 1.207000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/UnityRemoteVideo.cs: 732ca06f64f6815d4022f93b60c96922 -> 
+  custom:scripting/monoscript/fileName/ARRect.cs: a131f04357f5fa4a2ed9e9865126ac29 -> 
+  custom:scripting/monoscript/fileName/UnityARVideo.cs: 22daf59ddba5bd4561a1f6de5398d189 -> 
+  custom:scripting/monoscript/fileName/SerializableObjects.cs: d872520fb32f3cc8dda2758fff975324 -> 
+  custom:scripting/monoscript/fileName/UnityARBuildPostprocessor.cs: 3c479b2a3992483e57c1ad3d452bcd0b -> 
+  custom:scripting/monoscript/fileName/FocusSquare.cs: bc69a44f49ef1a3c828d602c69dbe79a -> 
+  custom:scripting/monoscript/fileName/UnityARAmbient.cs: 8c1e9fe47c8a95d584beca443c4ffc7a -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/ConnectionMessageIds.cs: a3f9862cb38a5c3052e1503bfe6a91b2 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/EditorHitTest.cs: b65289fa61808e67b4d4771c9c4b5bef -> 
+  custom:scripting/monoscript/fileName/ARUserAnchor.cs: 9544fd81358bddd16c37c9562ccb581f -> 
+  custom:scripting/monoscript/fileName/ARKitRemoteConnection.cs: 2ac23c555a170c03200e23774edd2b9a -> 
+  custom:scripting/monoscript/fileName/UnityARKitLightManager.cs: 8b29b0edee858c9a927afb4b54ceb16e -> 
+  custom:scripting/monoscript/fileName/UnityARUtility.cs: 31f47508d52eab88d0d22bba268f1b3f -> 
+  custom:scripting/monoscript/fileName/ARPlaneAnchor.cs: ae21134feb17d5842662b491d5f4a556 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/ARSize.cs: 6527256fab0ce0b7c755d496f6a013f6 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/DontDestroyOnLoad.cs: 2fff15d0e51429f1df8d5e3b094b8c7f -> 56b2a776441f8fe7d65978db2a529e59
+  custom:scripting/monoscript/fileName/ARCamera.cs: d74cfb0d34b546cf0529b629b225be99 -> 
+  custom:scripting/monoscript/fileName/ARHitTestResult.cs: dbd1f21240cde130c305d3946b4803dc -> 
+  custom:scripting/monoscript/fileName/UnityARGeneratePlane.cs: b164f4c2791af4fbd48a5a3b70a3723c -> 
+  custom:scripting/monoscript/fileName/AR3DOFCameraManager.cs: 10389ae78f2045c8a5830a1627b9a754 -> 
+  custom:scripting/monoscript/fileName/UnityARKitPluginSettings.cs: a19f853bd354bc7c9ba9cae852348c90 -> 
+  custom:scripting/monoscript/fileName/UnityARCameraNearFar.cs: 064a8a124726047d8848bbc0b3ba0f48 -> 
+  custom:scripting/monoscript/fileName/UnityARAnchorManager.cs: efb73106f12e36d806a2b5b3cab43c39 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ARFrame.cs: f426a71510ea2409b1f518eeaee3fb26 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:scripting/monoscript/fileName/UnityARHitTestExample.cs: 585394dd31dd2d578b5a39661f3156a1 -> 
+  custom:scripting/monoscript/fileName/PointCloudParticleExample.cs: 2127569364bd47af0e33bdd589f02a1c -> 
+  custom:scripting/monoscript/fileName/ARFaceAnchor.cs: e18e64ef1bd4205b9b43ed68ef445090 -> 
+  custom:scripting/monoscript/fileName/UnityARCameraManager.cs: 482d027fe096f486883a75d01dce54ae -> 
+  custom:scripting/monoscript/fileName/ARPlaneAnchorGameObject.cs: dbd910d19ade41d2be9a32b256d0f76a -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityARUserAnchorExample.cs: 3dee24c3440ecc03af912fa75af285d4 -> 
+  custom:scripting/monoscript/fileName/ARAnchor.cs: ff8ad1093254d546c5583f49c2510aa1 -> c3f780b2cf86850afd21e0595aeb6153
+  custom:scripting/monoscript/fileName/UnityARSessionNativeInterface.cs: 7df308ca7eb6a478a1564926bbd4ec64 -> 
+  custom:scripting/monoscript/fileName/UnityPointCloudExample.cs: 2c20f6f664f45d8ac3b8e8e1f26a8f43 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ConnectToEditor.cs: d8538f3df3a6a578dd6683ed3fc13455 -> 
+  custom:scripting/monoscript/fileName/ARLightEstimate.cs: 2b88554d4869d3ecc50031c461679771 -> 
+  custom:scripting/monoscript/fileName/UnityARMatrixOps.cs: 5889caf876a10e449b7d8c748f529ca8 -> 
+  custom:scripting/monoscript/fileName/ARTextureHandles.cs: 3f5b84a30600ede76a4f28ec7c79848e -> 
+  custom:scripting/monoscript/fileName/GPSLocation.cs: c54591021a494ad4c3f1f21a2b68dbef -> 
+  custom:scripting/monoscript/fileName/ObjectSerializationExtension.cs: a1316ad092e228ecad25ec4d3c0efea8 -> 
+  custom:scripting/monoscript/fileName/UnityARUserAnchorComponent.cs: bf205267640665d47e5a63e3a2000a9e -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/UnityARKitControl.cs: 82f13175afff34da502b2d922695a84e -> 
+  custom:scripting/monoscript/fileName/ARPoint.cs: b543ce684f5effe1394f011653ca0e67 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 15.95 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (1.1 MB). Loaded Objects now: 3003.
+Memory consumption went from 73.5 MB to 72.4 MB.
+Total: 6.323100 ms (FindLiveObjects: 0.276800 ms CreateObjectMapping: 0.187100 ms MarkObjects: 4.931800 ms  DeleteObjects: 0.926000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/UnityRemoteVideo.cs: 732ca06f64f6815d4022f93b60c96922 -> 
+  custom:scripting/monoscript/fileName/ARRect.cs: a131f04357f5fa4a2ed9e9865126ac29 -> 
+  custom:scripting/monoscript/fileName/UnityARVideo.cs: 22daf59ddba5bd4561a1f6de5398d189 -> 
+  custom:scripting/monoscript/fileName/SerializableObjects.cs: d872520fb32f3cc8dda2758fff975324 -> 
+  custom:scripting/monoscript/fileName/UnityARBuildPostprocessor.cs: 3c479b2a3992483e57c1ad3d452bcd0b -> 
+  custom:scripting/monoscript/fileName/FocusSquare.cs: bc69a44f49ef1a3c828d602c69dbe79a -> 
+  custom:scripting/monoscript/fileName/UnityARAmbient.cs: 8c1e9fe47c8a95d584beca443c4ffc7a -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/ConnectionMessageIds.cs: a3f9862cb38a5c3052e1503bfe6a91b2 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/EditorHitTest.cs: b65289fa61808e67b4d4771c9c4b5bef -> 
+  custom:scripting/monoscript/fileName/ARUserAnchor.cs: 9544fd81358bddd16c37c9562ccb581f -> 
+  custom:scripting/monoscript/fileName/ARKitRemoteConnection.cs: 2ac23c555a170c03200e23774edd2b9a -> 
+  custom:scripting/monoscript/fileName/UnityARKitLightManager.cs: 8b29b0edee858c9a927afb4b54ceb16e -> 
+  custom:scripting/monoscript/fileName/UnityARUtility.cs: 31f47508d52eab88d0d22bba268f1b3f -> 
+  custom:scripting/monoscript/fileName/ARPlaneAnchor.cs: ae21134feb17d5842662b491d5f4a556 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/ARSize.cs: 6527256fab0ce0b7c755d496f6a013f6 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/DontDestroyOnLoad.cs: 2fff15d0e51429f1df8d5e3b094b8c7f -> 56b2a776441f8fe7d65978db2a529e59
+  custom:scripting/monoscript/fileName/ARCamera.cs: d74cfb0d34b546cf0529b629b225be99 -> 
+  custom:scripting/monoscript/fileName/ARHitTestResult.cs: dbd1f21240cde130c305d3946b4803dc -> 
+  custom:scripting/monoscript/fileName/UnityARGeneratePlane.cs: b164f4c2791af4fbd48a5a3b70a3723c -> 
+  custom:scripting/monoscript/fileName/AR3DOFCameraManager.cs: 10389ae78f2045c8a5830a1627b9a754 -> 
+  custom:scripting/monoscript/fileName/UnityARKitPluginSettings.cs: a19f853bd354bc7c9ba9cae852348c90 -> 
+  custom:scripting/monoscript/fileName/UnityARCameraNearFar.cs: 064a8a124726047d8848bbc0b3ba0f48 -> 
+  custom:scripting/monoscript/fileName/UnityARAnchorManager.cs: efb73106f12e36d806a2b5b3cab43c39 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ARFrame.cs: f426a71510ea2409b1f518eeaee3fb26 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:scripting/monoscript/fileName/UnityARHitTestExample.cs: 585394dd31dd2d578b5a39661f3156a1 -> 
+  custom:scripting/monoscript/fileName/PointCloudParticleExample.cs: 2127569364bd47af0e33bdd589f02a1c -> 
+  custom:scripting/monoscript/fileName/ARFaceAnchor.cs: e18e64ef1bd4205b9b43ed68ef445090 -> 
+  custom:scripting/monoscript/fileName/UnityARCameraManager.cs: 482d027fe096f486883a75d01dce54ae -> 
+  custom:scripting/monoscript/fileName/ARPlaneAnchorGameObject.cs: dbd910d19ade41d2be9a32b256d0f76a -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/UnityARUserAnchorExample.cs: 3dee24c3440ecc03af912fa75af285d4 -> 
+  custom:scripting/monoscript/fileName/ARAnchor.cs: ff8ad1093254d546c5583f49c2510aa1 -> c3f780b2cf86850afd21e0595aeb6153
+  custom:scripting/monoscript/fileName/UnityARSessionNativeInterface.cs: 7df308ca7eb6a478a1564926bbd4ec64 -> 
+  custom:scripting/monoscript/fileName/UnityPointCloudExample.cs: 2c20f6f664f45d8ac3b8e8e1f26a8f43 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ConnectToEditor.cs: d8538f3df3a6a578dd6683ed3fc13455 -> 
+  custom:scripting/monoscript/fileName/ARLightEstimate.cs: 2b88554d4869d3ecc50031c461679771 -> 
+  custom:scripting/monoscript/fileName/UnityARMatrixOps.cs: 5889caf876a10e449b7d8c748f529ca8 -> 
+  custom:scripting/monoscript/fileName/ARTextureHandles.cs: 3f5b84a30600ede76a4f28ec7c79848e -> 
+  custom:scripting/monoscript/fileName/GPSLocation.cs: c54591021a494ad4c3f1f21a2b68dbef -> 
+  custom:scripting/monoscript/fileName/ObjectSerializationExtension.cs: a1316ad092e228ecad25ec4d3c0efea8 -> 
+  custom:scripting/monoscript/fileName/UnityARUserAnchorComponent.cs: bf205267640665d47e5a63e3a2000a9e -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/UnityARKitControl.cs: 82f13175afff34da502b2d922695a84e -> 
+  custom:scripting/monoscript/fileName/ARPoint.cs: b543ce684f5effe1394f011653ca0e67 -> 

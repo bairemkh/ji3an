@@ -1,7 +1,39 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp:
+    - Mapbox.Examples.CameraBillboard
+    - Mapbox.Examples.DragableDirectionWaypoint
+    - Mapbox.Examples.FeatureUiMarker
+    - Mapbox.Examples.LabelTextSetter
+    - Mapbox.Examples.MakiHelper
+    - Mapbox.Examples.PoiLabelTextSetter
+    - Mapbox.Examples.PoiMarkerHelper
+    - Mapbox.Examples.TextMeshOutline
+    - Mapbox.Unity.MeshGeneration.Data.AtlasInfo
+    - Mapbox.Unity.MeshGeneration.Modifiers.ModifierStack
+    - Mapbox.Unity.MeshGeneration.Modifiers.PrefabModifier
+    - Mapbox.Unity.MeshGeneration.Modifiers.ReplaceFeatureCollectionModifier
+    - Mapbox.Unity.Utilities.DebugTools.SceneData
+    - Mapbox.Unity.Utilities.DebugTools.ScenesList
+    - ScriptablePalette
     Assembly-CSharp.dll:
-    - VibrationController
+    - Mapbox.Examples.RotateWithLocationProvider
+    - Mapbox.Examples.Scripts.LogLocationProviderData
+    - Mapbox.Unity.Location.AngleSmoothingAverage
+    - Mapbox.Unity.Location.AngleSmoothingEMA
+    - Mapbox.Unity.Location.AngleSmoothingLowPass
+    - Mapbox.Unity.Location.AngleSmoothingNoOp
+    - Mapbox.Unity.Location.DeviceLocationProvider
+    - Mapbox.Unity.Location.DeviceLocationProviderAndroidNative
+    - Mapbox.Unity.Location.EditorLocationProviderLocationLog
+    - Mapbox.Unity.Location.LocationArrayEditorLocationProvider
+    - Mapbox.Unity.Location.LocationProviderFactory
+    - Mapbox.Unity.Location.TransformLocationProvider
+    - Mapbox.Unity.Map.AbstractMap
+    - Mapbox.Unity.Map.InitializeMapWithLocationProvider
+    - Mapbox.Unity.Map.MapVisualizer
+    - Mapbox.Unity.Map.UpdateMapWithLocationProvider
+    - Mapbox.Unity.Utilities.Runnable
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
@@ -64,17 +96,64 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.UI:
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.ContentSizeFitter
+    - UnityEngine.UI.HorizontalLayoutGroup
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.LayoutElement
+    - UnityEngine.UI.Mask
+    - UnityEngine.UI.Text
+    - UnityEngine.UI.VerticalLayoutGroup
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Mask
+    - UnityEngine.UI.Outline
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
+    - UnityEngine.UI.Toggle
+    - UnityEngine.UI.VerticalLayoutGroup
     UnityEngine.XR.MagicLeap.dll:
     - UnityEngine.XR.MagicLeap.MagicLeapSettings
   serializedClasses:
+    Assembly-CSharp:
+    - Mapbox.Unity.Location.DeviceLocationProvider/DebuggingInEditor
+    - Mapbox.Unity.Map.CameraBoundsTileProviderOptions
+    - Mapbox.Unity.Map.DefaultMapExtents
+    - Mapbox.Unity.Map.EditorPreviewOptions
+    - Mapbox.Unity.Map.ElevationLayerProperties
+    - Mapbox.Unity.Map.ElevationModificationOptions
+    - Mapbox.Unity.Map.ElevationRequiredOptions
+    - Mapbox.Unity.Map.ImageryLayer
+    - Mapbox.Unity.Map.ImageryLayerProperties
+    - Mapbox.Unity.Map.ImageryRasterOptions
+    - Mapbox.Unity.Map.LayerPerformanceOptions
+    - Mapbox.Unity.Map.LayerSourceOptions
+    - Mapbox.Unity.Map.MapExtentOptions
+    - Mapbox.Unity.Map.MapLocationOptions
+    - Mapbox.Unity.Map.MapOptions
+    - Mapbox.Unity.Map.MapPlacementOptions
+    - Mapbox.Unity.Map.MapScalingOptions
+    - Mapbox.Unity.Map.RangeAroundTransformTileProviderOptions
+    - Mapbox.Unity.Map.RangeTileProviderOptions
+    - Mapbox.Unity.Map.SpawnPrefabOptions
+    - Mapbox.Unity.Map.Style
+    - Mapbox.Unity.Map.TerrainColliderOptions
+    - Mapbox.Unity.Map.TerrainLayer
+    - Mapbox.Unity.Map.TerrainSideWallOptions
+    - Mapbox.Unity.Map.TileJsonData
+    - Mapbox.Unity.Map.UnityLayerOptions
+    - Mapbox.Unity.Map.VectorLayer
+    - Mapbox.Unity.Map.VectorLayerProperties
+    - Mapbox.Unity.MeshGeneration.Data.AtlasEntity
+    - Mapbox.Unity.MeshGeneration.Modifiers.FeatureBundle
     Unity.XR.OpenXR.Features.MetaQuestSupport:
     - UnityEngine.XR.OpenXR.Features.MetaQuestSupport.MetaQuestFeature/TargetDevice
     Unity.XR.Simulation:
@@ -87,6 +166,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Events.PersistentCallGroup
     - UnityEngine.Events.PersistentListenerMode
     - UnityEngine.Pose
+    - UnityEngine.RectOffset
     UnityEngine.UI:
     - UnityEngine.UI.AnimationTriggers
     - UnityEngine.UI.Button/ButtonClickedEvent
@@ -94,16 +174,13 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.FontData
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
+    - UnityEngine.UI.ScrollRect/ScrollRectEvent
+    - UnityEngine.UI.Scrollbar/ScrollEvent
     - UnityEngine.UI.SpriteState
-  methodsToPreserve:
-  - assembly: Assembly-CSharp
-    fullTypeName: VibrationController
-    methodName: StopVibration
-  - assembly: Assembly-CSharp
-    fullTypeName: VibrationController
-    methodName: StartVibration
+    - UnityEngine.UI.Toggle/ToggleEvent
+  methodsToPreserve: []
   sceneClasses:
-    Assets/Scenes/delivery.unity:
+    Assets/Mapbox/Examples/5_Playground/Scenes/LocationProvider.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -122,14 +199,34 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 102
+      Script: {instanceID: 0}
     - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 16676}
+    - Class: 114
+      Script: {instanceID: 16788}
+    - Class: 114
+      Script: {instanceID: 16804}
+    - Class: 114
+      Script: {instanceID: 16874}
     - Class: 114
       Script: {instanceID: 17322}
     - Class: 114
@@ -139,30 +236,110 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 17862}
     - Class: 114
-      Script: {instanceID: 18076}
+      Script: {instanceID: 18070}
     - Class: 114
-      Script: {instanceID: 18292}
+      Script: {instanceID: 18286}
     - Class: 114
-      Script: {instanceID: 18408}
+      Script: {instanceID: 18298}
     - Class: 114
-      Script: {instanceID: 18880}
+      Script: {instanceID: 18402}
     - Class: 114
-      Script: {instanceID: 19016}
+      Script: {instanceID: 18672}
     - Class: 114
-      Script: {instanceID: 19222}
+      Script: {instanceID: 18756}
     - Class: 114
-      Script: {instanceID: 19484}
+      Script: {instanceID: 18818}
     - Class: 114
-      Script: {instanceID: 19832}
+      Script: {instanceID: 18874}
     - Class: 114
-      Script: {instanceID: 20482}
+      Script: {instanceID: 19010}
+    - Class: 114
+      Script: {instanceID: 19216}
+    - Class: 114
+      Script: {instanceID: 19418}
+    - Class: 114
+      Script: {instanceID: 19476}
+    - Class: 114
+      Script: {instanceID: 19622}
+    - Class: 114
+      Script: {instanceID: 19824}
+    - Class: 114
+      Script: {instanceID: 24138}
+    - Class: 114
+      Script: {instanceID: 24318}
+    - Class: 114
+      Script: {instanceID: 24370}
+    - Class: 114
+      Script: {instanceID: 24390}
+    - Class: 114
+      Script: {instanceID: 24530}
+    - Class: 114
+      Script: {instanceID: 24602}
+    - Class: 114
+      Script: {instanceID: 24642}
+    - Class: 114
+      Script: {instanceID: 24650}
+    - Class: 114
+      Script: {instanceID: 24662}
+    - Class: 114
+      Script: {instanceID: 24742}
+    - Class: 114
+      Script: {instanceID: 24782}
+    - Class: 114
+      Script: {instanceID: 24834}
+    - Class: 114
+      Script: {instanceID: 24874}
+    - Class: 114
+      Script: {instanceID: 24922}
+    - Class: 114
+      Script: {instanceID: 24954}
+    - Class: 114
+      Script: {instanceID: 24982}
+    - Class: 114
+      Script: {instanceID: 25006}
+    - Class: 114
+      Script: {instanceID: 25098}
+    - Class: 114
+      Script: {instanceID: 25402}
+    - Class: 114
+      Script: {instanceID: 25446}
+    - Class: 114
+      Script: {instanceID: 25682}
+    - Class: 114
+      Script: {instanceID: 25698}
+    - Class: 114
+      Script: {instanceID: 25766}
+    - Class: 114
+      Script: {instanceID: 25802}
+    - Class: 114
+      Script: {instanceID: 25896}
+    - Class: 114
+      Script: {instanceID: 25912}
+    - Class: 114
+      Script: {instanceID: 25980}
+    - Class: 114
+      Script: {instanceID: 26044}
+    - Class: 114
+      Script: {instanceID: 26248}
+    - Class: 114
+      Script: {instanceID: 26256}
+    - Class: 114
+      Script: {instanceID: 26308}
     - Class: 115
       Script: {instanceID: 0}
+    - Class: 124
+      Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -171,6 +348,12 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+    - Class: 850595691
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -401,12 +584,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.ARFoundation
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARTrackedObject
-  - hash:
-      serializedVersion: 2
-      Hash: e4c654f2c22e97586651b87d4668f2fe
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Readme
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -955,12 +1132,6 @@ ScriptsOnlyBuild:
     className: MultiplayerEventSystem
   - hash:
       serializedVersion: 2
-      Hash: 8f3e1957ddf83e4521e7075d4ad6a09e
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: login
-  - hash:
-      serializedVersion: 2
       Hash: 4ee3c79798efe8cc7e12f6e2bb55b45f
     assemblyName: Unity.InputSystem
     namespaceName: UnityEngine.InputSystem.XR
@@ -1031,12 +1202,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.ARFoundation
     namespaceName: UnityEngine.XR.ARFoundation
     className: ToolButton
-  - hash:
-      serializedVersion: 2
-      Hash: 3b6efb4dc5b1f8d68e42504b55c1e517
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: spawnManager
   - hash:
       serializedVersion: 2
       Hash: f5b993700bbd9a807fb3e7ad92ac9dbe
@@ -1117,12 +1282,6 @@ ScriptsOnlyBuild:
     className: PlayerInputManager
   - hash:
       serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: VibrationController
-  - hash:
-      serializedVersion: 2
       Hash: 142264d9d6b0842e37d4aad2e8ff56d0
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -1139,7 +1298,769 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: VibrationController
+  - hash:
+      serializedVersion: 2
+      Hash: 8f3e1957ddf83e4521e7075d4ad6a09e
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: login
+  - hash:
+      serializedVersion: 2
+      Hash: e4c654f2c22e97586651b87d4668f2fe
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Readme
+  - hash:
+      serializedVersion: 2
+      Hash: 3b6efb4dc5b1f8d68e42504b55c1e517
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: spawnManager
+  - hash:
+      serializedVersion: 2
+      Hash: 1b932cfa42d5959374a5f137afba582a
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: SetCameraHeight
+  - hash:
+      serializedVersion: 2
+      Hash: f20555c8ffe8d845e3dfc8ea2b857cc9
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: SnapTerrainModifier
+  - hash:
+      serializedVersion: 2
+      Hash: 5ec2cd2b7d68a02658766b26378a0ef1
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Location
+    className: EditorLocationProvider
+  - hash:
+      serializedVersion: 2
+      Hash: 5a25ab1438f58479932df6d27104328e
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Location
+    className: TransformLocationProvider
+  - hash:
+      serializedVersion: 2
+      Hash: f20555c8ffe8d845e3dfc8ea2b857cc9
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: DisableMeshRendererModifier
+  - hash:
+      serializedVersion: 2
+      Hash: 87705e0f6d19ab3eed26f01d550fcb57
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Utilities
+    className: Console
+  - hash:
+      serializedVersion: 2
+      Hash: 545a8b0190319100c658193e2e7be87f
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: ReloadMap
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: FeatureSelectionDetector
+  - hash:
+      serializedVersion: 2
+      Hash: 76a98b43965b0d602203dd8451050baf
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: SnapTerrainRaycastModifier
+  - hash:
+      serializedVersion: 2
+      Hash: d6da3d0bd60e70f01dd41e06729143a6
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: AstronautMouseController
+  - hash:
+      serializedVersion: 2
+      Hash: bb49b4ba22871e88e351924b95e9d475
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: LoadingPanelController
+  - hash:
+      serializedVersion: 2
+      Hash: e1465829f76e237a764942f6ee73b24a
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples.Scripts
+    className: LogLocationProviderData
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Interfaces
+    className: VectorLayerVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: c1e9724f286c66893cd56dff28bfbcf6
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: CameraBillboard
+  - hash:
+      serializedVersion: 2
+      Hash: 4d070423b6019e4424f6daf5ba2a2d29
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ScriptablePalette
+  - hash:
+      serializedVersion: 2
+      Hash: fabe92df926671993d6966bb8b540a15
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: SpawnInsideModifier
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: BlinkLight
+  - hash:
+      serializedVersion: 2
+      Hash: 0b2f95e9e8b2ef0bfd5f55c8b97b87c6
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Map
+    className: MapVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ImageDataFetcher
+  - hash:
+      serializedVersion: 2
+      Hash: fc94ce35a2d7a25f6216b92046cc44d4
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration
+    className: KdTreeCollection
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Interfaces
+    className: LocationPrefabsLayerVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: 3171c790fd9b757835105a9173e252b1
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: TextureMonoBehaviourModifier
+  - hash:
+      serializedVersion: 2
+      Hash: 3b69481c136480524b141091eb9313de
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: ReplaceFeatureCollectionModifier
+  - hash:
+      serializedVersion: 2
+      Hash: fb6530cdeabf5dfc26caf7e794ed5996
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: ChamferHeightModifier
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Factories
+    className: VectorTileFactory
+  - hash:
+      serializedVersion: 2
+      Hash: 413ad89259b92c1311e1eadab48550b5
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: LoftModifier
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: PoiMarkerHelper
+  - hash:
+      serializedVersion: 2
+      Hash: 6c566e300272592bd76c2e5b978b8806
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Utilities.DebugTools
+    className: ScenesList
+  - hash:
+      serializedVersion: 2
+      Hash: b3fafa36ff29ac1503ef4f63d5337280
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: AddMonoBehavioursModifier
+  - hash:
+      serializedVersion: 2
+      Hash: 0d1efe10728aba30a52044dc136028a0
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Location
+    className: EditorLocationProviderLocationLog
+  - hash:
+      serializedVersion: 2
+      Hash: 942c9d4dce4c0e2fe1f613cea69e4753
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Location
+    className: DeviceLocationProviderAndroidNative
+  - hash:
+      serializedVersion: 2
+      Hash: 6f10957cece2c768a2502b5d5f780060
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: ReplaceFeatureModifier
+  - hash:
+      serializedVersion: 2
+      Hash: f20555c8ffe8d845e3dfc8ea2b857cc9
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: GameObjectModifier
+  - hash:
+      serializedVersion: 2
+      Hash: 7331bef98e0cbf84bce1ae4f1d7d9d2d
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Factories
+    className: DirectionsFactory
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: HighlightFeature
+  - hash:
+      serializedVersion: 2
+      Hash: 22585afe437c7c49ef5c12c47877fb29
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: FeatureUiMarker
+  - hash:
+      serializedVersion: 2
+      Hash: 2566667d43d919d3d2fb368af59ae4e1
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Components
+    className: VertexDebugger
+  - hash:
+      serializedVersion: 2
+      Hash: 0d593af37f31ae452b74eea1e59892c0
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: LayerModifier
+  - hash:
+      serializedVersion: 2
+      Hash: 1376c00bac5d05e40862d036b10075e2
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Map
+    className: UpdateMapWithLocationProvider
+  - hash:
+      serializedVersion: 2
+      Hash: f20555c8ffe8d845e3dfc8ea2b857cc9
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: ModifierBase
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Components
+    className: VertexDebuggerGizmo
+  - hash:
+      serializedVersion: 2
+      Hash: f20555c8ffe8d845e3dfc8ea2b857cc9
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: UvModifier
+  - hash:
+      serializedVersion: 2
+      Hash: 955fb2f912b60ee6fd8d3c654f17784a
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: TagModifier
+  - hash:
+      serializedVersion: 2
+      Hash: 87dfebebd269ed399e398e9e6dc7eafe
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Map.TileProviders
+    className: RangeAroundTransformTileProvider
+  - hash:
+      serializedVersion: 2
+      Hash: 6865defa80a23c6785bca1471142a139
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: ModifierStack
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: AstronautDirections
+  - hash:
+      serializedVersion: 2
+      Hash: 64b71162040d3eabed854f38b8f7dc82
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: AddToCollectionModifier
+  - hash:
+      serializedVersion: 2
+      Hash: f24922c42d37632d1ac08e9c6779e73e
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: LabelTextSetter
+  - hash:
+      serializedVersion: 2
+      Hash: 3aff08fb24047d35fa4c76b904ecd93d
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Map.TileProviders
+    className: QuadTreeTileProvider
+  - hash:
+      serializedVersion: 2
+      Hash: 8f564d31a977054d4199ad2e7b0c3152
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Utilities
+    className: TelemetryConfigurationButton
+  - hash:
+      serializedVersion: 2
+      Hash: 390658d5c9c42ca8043ae31f7a51b8c9
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: CameraMovement
+  - hash:
+      serializedVersion: 2
+      Hash: ecda9f2e5f000276a299965132729320
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: SmoothLineModifier
+  - hash:
+      serializedVersion: 2
+      Hash: f20555c8ffe8d845e3dfc8ea2b857cc9
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MeshGenerationBase
+  - hash:
+      serializedVersion: 2
+      Hash: 52c546e94e2c45c6f14c6be700e4ff50
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Location
+    className: LocationProviderFactory
+  - hash:
+      serializedVersion: 2
+      Hash: 343eb16413baca420a44c288c967144d
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Utilities.DebugTools
+    className: SceneData
+  - hash:
+      serializedVersion: 2
+      Hash: a7fa89b39f942efca01450ec01f24e43
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: RotateWithLocationProvider
+  - hash:
+      serializedVersion: 2
+      Hash: ccb6725fe962fa9ce58950f45392cbdb
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Location
+    className: AngleSmoothingEMA
+  - hash:
+      serializedVersion: 2
+      Hash: 43a6649174465e98a863955c5038594d
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: MapboxStylesColorModifier
+  - hash:
+      serializedVersion: 2
+      Hash: 40aee015566a223af8014d50a908a383
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Map.TileProviders
+    className: TileErrorHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 5abbbcf788afffebb9e9f47baac6ecab
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: MaterialModifier
+  - hash:
+      serializedVersion: 2
+      Hash: e499267b4f3f1e7123f0fec379af74b2
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Map
+    className: InitializeMapWithLocationProvider
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: VectorDataFetcher
+  - hash:
+      serializedVersion: 2
+      Hash: f20555c8ffe8d845e3dfc8ea2b857cc9
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: MeshModifier
+  - hash:
+      serializedVersion: 2
+      Hash: cad861bf8930b78c5a65a8881736ecce
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: TrafficUvAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: 8895d8fffecbe6c54944df088fae5269
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: HighlightBuildings
+  - hash:
+      serializedVersion: 2
+      Hash: da38509a27c81d9473cb61faaf9f27f5
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: LocationStatus
+  - hash:
+      serializedVersion: 2
+      Hash: 68033665e171d1c75bc3a2562aea841e
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: CharacterMovement
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: ImmediatePositionWithLocationProvider
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: ReverseGeocodeUserInput
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Components
+    className: TextureSelector
+  - hash:
+      serializedVersion: 2
+      Hash: 7d39c20350cfffb5553752f5be1c647d
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: POIPlacementScriptExample
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Map.TileProviders
+    className: GlobeTileProvider
+  - hash:
+      serializedVersion: 2
+      Hash: 4b844526cd9f6557583ba306a13e6ae9
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: HeightModifier
+  - hash:
+      serializedVersion: 2
+      Hash: 0feb5af57ebd7f370db0e7eabbc49b26
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: ColliderModifier
+  - hash:
+      serializedVersion: 2
+      Hash: 3418216242766ad9eee8097b998089cd
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Data
+    className: AtlasInfo
+  - hash:
+      serializedVersion: 2
+      Hash: 7322f69b5a6f4c91b9f72eda7a0437f6
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: HeroBuildingSelectionUserInput
+  - hash:
+      serializedVersion: 2
+      Hash: f20555c8ffe8d845e3dfc8ea2b857cc9
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: ObjectInspectorModifier
+  - hash:
+      serializedVersion: 2
+      Hash: 57212ecc6ab6a7c9af2e998f84254a7b
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples.Playground
+    className: DirectionsExample
+  - hash:
+      serializedVersion: 2
+      Hash: ccb6725fe962fa9ce58950f45392cbdb
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Location
+    className: AngleSmoothingAverage
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Utilities
+    className: Runnable
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TerrainDataFetcher
+  - hash:
+      serializedVersion: 2
+      Hash: 8d7b1db4fcfe8ead5d86568e6b18ad88
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples.Scripts.Utilities
+    className: DragRotate
+  - hash:
+      serializedVersion: 2
+      Hash: e56dc7f296daa9972c3e4bcd01809515
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Utilities
+    className: MapVisualizerPerformance
+  - hash:
+      serializedVersion: 2
+      Hash: e49455c5802e379dc9581a4216a8bcde
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: SpawnOnGlobeExample
+  - hash:
+      serializedVersion: 2
+      Hash: 8041dfc2a3e8f8edcac4ec382de7e87f
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples.Playground
+    className: ReverseGeocoderExample
+  - hash:
+      serializedVersion: 2
+      Hash: fce1904189e628ecbe6c331bfc82dffe
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: TextMeshOutline
+  - hash:
+      serializedVersion: 2
+      Hash: 1d32b8afb0bda29154887d1c5d41fd07
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Location
+    className: DeviceLocationProvider
+  - hash:
+      serializedVersion: 2
+      Hash: 53c938fe8c516177e7611ebf57500d3a
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples.Playground
+    className: RasterTileExample
+  - hash:
+      serializedVersion: 2
+      Hash: 717f1f31306fc3161267d118e69ad446
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: PoiLabelTextSetter
+  - hash:
+      serializedVersion: 2
+      Hash: f7616145831129fa4a34158d4a0b9c27
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: TextureSideWallModifier
+  - hash:
+      serializedVersion: 2
+      Hash: f20555c8ffe8d845e3dfc8ea2b857cc9
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: NoiseOffsetModifier
+  - hash:
+      serializedVersion: 2
+      Hash: bc79d3e8f1384a8652c5b5974ed63a3d
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Factories
+    className: MapImageFactory
+  - hash:
+      serializedVersion: 2
+      Hash: 4c41a3461584c3feb902fe204674d97b
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: PositionWithLocationProvider
+  - hash:
+      serializedVersion: 2
+      Hash: fd418c5adeda84ebed7673b36a596239
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Location
+    className: AngleSmoothingLowPass
+  - hash:
+      serializedVersion: 2
+      Hash: 100d090c66e00e0560ab356b00ee343a
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Location
+    className: LocationArrayEditorLocationProvider
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: ForwardGeocodeUserInput
+  - hash:
+      serializedVersion: 2
+      Hash: 5af5fd4e8d71c13263ea11467ceb2279
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples.Voxels
+    className: VoxelFetcher
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: MakiHelper
+  - hash:
+      serializedVersion: 2
+      Hash: 3ad33b7e9b8f13b463797acd7a71a587
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: QuadTreeCameraMovement
+  - hash:
+      serializedVersion: 2
+      Hash: f20555c8ffe8d845e3dfc8ea2b857cc9
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: PolygonMeshModifier
+  - hash:
+      serializedVersion: 2
+      Hash: 7ca0373c14509d92bb202984dcae2ae0
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: DragableDirectionWaypoint
+  - hash:
+      serializedVersion: 2
+      Hash: 46c848c896da283bbcbbd8929cc36036
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: SpawnOnMap
+  - hash:
+      serializedVersion: 2
+      Hash: 01bc198c7f9f5ea86dad3a23b27c7a88
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Components
+    className: FeatureBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 0b2f95e9e8b2ef0bfd5f55c8b97b87c6
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Map.TileProviders
+    className: QuadTreeMapVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: 5bfe467160a7ec0126c7729f5ade8fb0
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: ModifierStackBase
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration
+    className: FeatureCollectionBase
+  - hash:
+      serializedVersion: 2
+      Hash: c7a7dba7ef47cbda9787af8ebc0250db
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Utilities
+    className: DontDestroyOnLoad
+  - hash:
+      serializedVersion: 2
+      Hash: 3171c790fd9b757835105a9173e252b1
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: TextureModifier
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: UniAndroidPermission
+  - hash:
+      serializedVersion: 2
+      Hash: 688a49c7584991d95e85c7c0c3c2858b
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Utilities
+    className: OpenUrlOnButtonClick
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Map.TileProviders
+    className: RangeTileProvider
+  - hash:
+      serializedVersion: 2
+      Hash: c43a929af1cde928cb0109302378f910
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples.Playground
+    className: ForwardGeocoderExample
+  - hash:
+      serializedVersion: 2
+      Hash: ff435a0ec31ad5a50a947202b8a6bf44
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Map
+    className: AbstractMap
+  - hash:
+      serializedVersion: 2
+      Hash: 6d94898e8346cb9bd96eb1e5fc36e1ec
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: PrefabModifier
+  - hash:
+      serializedVersion: 2
+      Hash: f20555c8ffe8d845e3dfc8ea2b857cc9
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: FeatureBehaviourModifier
+  - hash:
+      serializedVersion: 2
+      Hash: ccb6725fe962fa9ce58950f45392cbdb
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.Location
+    className: AngleSmoothingNoOp
+  - hash:
+      serializedVersion: 2
+      Hash: f20555c8ffe8d845e3dfc8ea2b857cc9
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: LineMeshModifier
+  - hash:
+      serializedVersion: 2
+      Hash: b15b045d024d9a283db90e0e40e5f327
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples
+    className: ChangeShadowDistance
+  - hash:
+      serializedVersion: 2
+      Hash: b5fc048e950f75135ccd98cd546f109f
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Data
+    className: UnityTile
+  - hash:
+      serializedVersion: 2
+      Hash: a17c608ad45543bf00d8eb6374722a7b
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples.Voxels
+    className: VoxelTile
+  - hash:
+      serializedVersion: 2
+      Hash: c43a929af1cde928cb0109302378f910
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Examples.Playground
+    className: VectorTileExample
+  - hash:
+      serializedVersion: 2
+      Hash: 8ef6aa511b170d2f58669552d80b3aad
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Factories
+    className: TerrainFactoryBase
+  - hash:
+      serializedVersion: 2
+      Hash: 5bfe467160a7ec0126c7729f5ade8fb0
+    assemblyName: Assembly-CSharp
+    namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
+    className: MergedModifierStack
   platform: 13
   scenePathNames:
-  - Assets/Scenes/delivery.unity
-  playerPath: C:/Users/baire/OneDrive/Desktop/jiaan.apk
+  - Assets/Mapbox/Examples/5_Playground/Scenes/LocationProvider.unity
+  playerPath: D:/ji3an/testt.apk

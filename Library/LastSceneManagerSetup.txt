@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/testAR.unity
+- path: Assets/Mapbox/Examples/5_Playground/Scenes/LocationProvider.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
